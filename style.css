@@ -18,10 +18,16 @@ html {
 
 body {
   margin: 0;
-  padding-top: 104.5px;
+  padding-top: 69.5px;
   background-color: var(--base-color);
   color: var(--text-color);
   font-family: 'Roboto', sans-serif;
+}
+
+*[class$='wrapper'] {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 h1,
@@ -37,6 +43,7 @@ h1 {
 h2 {
   color: var(--main-color);
   font-size: 2.5rem;
+  text-align: center;
 }
 
 h3 {
@@ -74,21 +81,6 @@ blockquote {
   position: absolute;
   white-space: nowrap;
   width: 1px;
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem;
-}
-
-.grid {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .portrait {
@@ -135,6 +127,7 @@ header {
 nav li {
   display: inline-block;
   margin-right: 1rem;
+  letter-spacing: 0.05rem;
 }
 
 nav li:last-child {
@@ -187,6 +180,12 @@ nav a:hover {
 }
 
 /* introduction */
+.intro-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #intro p {
   line-height: normal;
 }
@@ -222,7 +221,11 @@ nav a:hover {
   background-color: var(--second-bg-color);
 }
 
-#about p {
+.about-wrapper {
+  padding: 1rem;
+}
+
+.about-wrapper p {
   text-align: center;
 }
 
@@ -251,6 +254,9 @@ nav a:hover {
 }
 
 .org {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   margin-bottom: 2rem;
 }
@@ -316,14 +322,14 @@ nav a:hover {
 }
 
 /* skills, interests */
-.list-section .grid {
+.icon-list-section ul {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
   width: 100%;
 }
 
-.list-section .grid div {
+.icon-list-section li {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -333,6 +339,12 @@ nav a:hover {
 footer {
   background-color: var(--main-color);
   color: var(--base-color);
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
 }
 
 footer h2 {
@@ -379,11 +391,11 @@ footer .portrait {
 }
 
 @media screen and (min-width: 600px) {
-  body {
-    padding-top: 69.5px;
+  * [class$='wrapper'] {
+    padding: 1rem 2rem;
   }
 
-  #about p {
+  h2 {
     text-align: start;
   }
 
@@ -395,13 +407,7 @@ footer .portrait {
     display: none;
   }
 
-  .wrapper,
-  .subwrapper {
-    padding-right: 2rem;
-    padding-left: 2rem;
-    align-items: flex-start;
-  }
-
+  /* header */
   .header-wrapper {
     display: flex;
     flex-direction: row;
@@ -410,25 +416,21 @@ footer .portrait {
     padding: 0 2rem;
   }
 
-  nav li {
-    letter-spacing: 0.05em;
-  }
-
-  .grid {
+  /* introduction */
+  .intro-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
     align-items: center;
   }
 
-  /* introduction */
+  #intro .portrait {
+    order: 1;
+  }
+
   .intro-para {
     flex-direction: column;
     align-items: flex-start;
-  }
-
-  #intro .portrait {
-    justify-self: end;
   }
 
   .greeting {
@@ -440,6 +442,10 @@ footer .portrait {
   }
 
   /* about me */
+  .about-wrapper p {
+    text-align: start;
+  }
+
   .history {
     align-items: flex-start;
     width: 100%;
@@ -449,7 +455,7 @@ footer .portrait {
     text-align: start;
   }
 
-  .history .grid {
+  .org {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-gap: 0;
@@ -460,7 +466,7 @@ footer .portrait {
     font-weight: 700;
     justify-self: end;
     text-align: end;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.05rem;
   }
 
   /* works */
@@ -469,13 +475,19 @@ footer .portrait {
   }
 
   /* skills */
-  .list-section .grid {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  .icon-list-section ul {
+    grid-template-columns: repeat(6, 1fr);
   }
 
   /* footer */
-  footer .portrait {
-    justify-self: start;
+  .footer-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+
+  footer h2 {
+    text-align: right;
   }
 
   #contact,
@@ -483,26 +495,18 @@ footer .portrait {
     align-items: flex-end;
   }
 
-  .contact-basic li {
-    text-align: end;
-  }
-
   .contact-social li {
-    margin-right: 0;
-    margin-left: 1rem;
+    margin: 0 0 0 1rem;
   }
 }
 
 @media screen and (min-width: 960px) {
-  .wrapper {
-    padding-right: 3rem;
-    padding-left: 3rem;
+  * [class$='wrapper'] {
+    padding: 1rem 3rem;
   }
 
   .header-wrapper {
     padding: 0 3rem;
-    max-width: 1200px;
-    margin: 0 auto;
   }
 
   .greeting {
@@ -513,7 +517,7 @@ footer .portrait {
     font-size: 5.25rem;
   }
 
-  .list-section .grid {
+  .icon-list-section ul {
     grid-template-columns: repeat(8, 1fr);
   }
 
