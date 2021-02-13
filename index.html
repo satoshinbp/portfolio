@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shinya Sato</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/5ad9629e4a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="header-wrapper">
+        <h1>Shinya Sato</h1>
+        <nav>
+          <div id="overlay"></div>
+          <button class="icon-button pc-hidden" id="menu-open-button">
+            <i class="fas fa-bars"></i>
+          </button>
+          <button
+            class="icon-button pc-hidden hidden-button"
+            id="menu-close-button"
+          >
+            <i class="fas fa-times"></i>
+          </button>
+          <ul class="mobile-hidden" id="menu-list">
+            <li><a href="#about" class="menu-item">About</a></li>
+            <li><a href="#works" class="menu-item">Works</a></li>
+            <li><a href="#skills" class="menu-item">Skills</a></li>
+            <li><a href="#interests" class="menu-item">Interests</a></li>
+            <li><a href="#contact" class="menu-item">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="intro">
+        <div class="wrapper grid">
+          <img
+            src="images/portrait.jpeg"
+            alt="side portrait"
+            class="portrait pc-hidden"
+          />
+
+          <div class="intro-para">
+            <p class="greeting">Hey, I'm</p>
+            <p class="name">Shinya Sato</p>
+            <p class="jobtitle">Web Developer</p>
+          </div>
+
+          <img
+            src="images/portrait.jpeg"
+            alt="side portrait"
+            class="portrait mobile-hidden"
+          />
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="wrapper">
+          <h2>About Me</h2>
+
+          <section id="bio">
+            <p>
+              Hi, I'm Shinya, currently studying web and mobile app development
+              in the post-degree program at Langara College. Some works achieved
+              during the program are shown in
+              <a href="#works">My Works</a> section. I'm also self-teaching
+              modern programming technologies which are not covered in the
+              program.
+            </p>
+            <blockquote cite="https://www.azquotes.com/quote/87359">
+              Common sense is the collection of prejudices acquired by age 18. -
+              Albert Einstein
+            </blockquote>
+            <p>
+              I like keep updating my values, knowledge, and skills. IT industry
+              is fast paced environement, which means challenging but also
+              exciting for me. This is why I decided to dive into this field and
+              I'm studying in college.
+            </p>
+          </section>
+
+          <section id="education" class="history">
+            <h3><span>Education</span></h3>
+
+            <div class="org grid">
+              <p><b>Langara College</b>, Vancouver, BC</p>
+              <p class="duration">Sep 2020 - Present</p>
+              <p>Post-Degree Diploma of Web and Mobile App Development</p>
+            </div>
+            <div class="org grid">
+              <p><b>University of Tokyo</b>, Tokyo</p>
+              <p class="duration">Apr 2014 - Mar 2016</p>
+              <p>Master of Aeronautics, Engineering</p>
+            </div>
+            <div class="org grid">
+              <p><b>University of Tokyo</b>, Tokyo</p>
+              <p class="duration">Apr 2010 - Mar 2014</p>
+              <p>Bachelor of Aeronautics, Engineering</p>
+            </div>
+          </section>
+
+          <section id="employment" class="history">
+            <h3><span>Work History</span></h3>
+
+            <div class="org grid">
+              <p>
+                <b>MODEC Offshore Production Systems Pte. Ltd.​</b>, Singapore
+              </p>
+              <p class="duration">Apr 2018 - Mar 2020</p>
+              <p>Mechanical Engineer</p>
+            </div>
+            <div class="org grid">
+              <p><b>MODEC, Inc.</b>​, Tokyo</p>
+              <p class="duration">Apr 2016 - Apr 2018</p>
+              <p>Mechanical Engineer</p>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section id="works">
+        <div class="wrapper">
+          <h2>My Works</h2>
+          <div class="card-container">
+            <div class="card">
+              <h3 class="card-title">E-portfolio</h3>
+              <p class="card-tag">HTML, CSS, JavaScript</p>
+              <p class="card-content">
+                E-portfolio, this website, is developed as the first HTML/CSS
+                assignment in College, also implementing small JavaScript
+                programming.
+              </p>
+              <div class="card-action">
+                <ul>
+                  <li>
+                    <a href="https://github.com/satoshinbp" aria-hidden="true">
+                      <span class="visually-hidden">GitHub</span>
+                      <i class="fab fa-github" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/satoshinbp" aria-hidden="true">
+                      <span class="visually-hidden">Open in new window</span>
+                      <i
+                        class="fas fa-external-link-alt"
+                        aria-hidden="true"
+                      ></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card">
+              <h3 class="card-title">Trip Planner</h3>
+              <p class="card-tag">React, Next.js, Material-UI, Firebase</p>
+              <p class="card-content">
+                Trip Planner is a web application to manage trip itinerary. It
+                use React and Next.js to manage the components, Material-UI to
+                style and Firebase to manage the data.
+              </p>
+              <div class="card-action">
+                <ul>
+                  <li>
+                    <a href="https://github.com/satoshinbp" aria-hidden="true">
+                      <span class="visually-hidden">GitHub</span>
+                      <i class="fab fa-github" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/satoshinbp" aria-hidden="true">
+                      <span class="visually-hidden">Open in new window</span>
+                      <i
+                        class="fas fa-external-link-alt"
+                        aria-hidden="true"
+                      ></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="list-section">
+        <div class="wrapper">
+          <h2>Skills</h2>
+
+          <div class="grid">
+            <div>
+              <i class="fab fa-html5 fa-3x"></i>
+              <p>HTML5</p>
+            </div>
+            <div>
+              <i class="fab fa-css3-alt fa-3x"></i>
+              <p>CSS3</p>
+            </div>
+            <div>
+              <i class="fab fa-js fa-3x"></i>
+              <p>JavaScript</p>
+            </div>
+            <div>
+              <i class="fab fa-react fa-3x"></i>
+              <p>React</p>
+            </div>
+            <div>
+              <i class="fab fa-node-js fa-3x"></i>
+              <p>Node.js</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="interests" class="list-section">
+        <div class="wrapper">
+          <h2>Interests</h2>
+
+          <div class="grid">
+            <div>
+              <i class="fas fa-suitcase-rolling fa-3x" aria-hidden="true"></i>
+              <p>Travel</p>
+            </div>
+            <div>
+              <i class="fas fa-film fa-3x" aria-hidden="true"></i>
+              <p>Movie</p>
+            </div>
+            <div>
+              <i class="fas fa-dumbbell fa-3x" aria-hidden="true"></i>
+              <p>Exercise</p>
+            </div>
+            <div>
+              <i class="fas fa-hot-tub fa-3x" aria-hidden="true"></i>
+              <p>Onsen</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrapper grid">
+        <img
+          src="images/portrait-footer.jpeg"
+          alt="front portrait"
+          class="portrait mb-hidden"
+        />
+
+        <section id="contact">
+          <h2>Contact Me</h2>
+
+          <ul class="contact-basic">
+            <li>Shinya Sato</li>
+            <li>
+              Email:
+              <a href="mailto:0113shin.s@gmail.com">0113shin.s@gmail.com</a>
+            </li>
+            <li>Tel: <a href="tel:+818078527540">+1 (604) 365-3367</a></li>
+          </ul>
+
+          <ul class="contact-social">
+            <li>
+              <a href="www.linkedin.com/in/shinyasato" aria-hidden="true">
+                <span class="visually-hidden">LinkedIn</span>
+                <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/satoshinbp" aria-hidden="true">
+                <span class="visually-hidden">GitHub</span>
+                <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/shinya.sato.353"
+                aria-hidden="true"
+              >
+                <span class="visually-hidden">Facebook</span>
+                <i class="fab fa-facebook-square fa-2x" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
