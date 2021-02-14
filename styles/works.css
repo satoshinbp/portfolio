@@ -12,7 +12,6 @@ h3 {
 }
 
 .hero-image {
-  background-image: url('../images/e-portfolio.jpg');
   height: calc(50vh - 69.5px);
   background-position: center;
   background-repeat: no-repeat;
@@ -20,26 +19,37 @@ h3 {
   position: relative;
 }
 
+#portfolio .hero-image {
+  background-image: url('../images/e-portfolio.jpg');
+}
+
+#trip-planner .hero-image {
+  background-image: url('../images/trip-planner.jpg');
+}
+
 .wrapper {
   padding-top: 0;
 }
 
-.external-link ul {
+.meta {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.link {
   display: flex;
   justify-content: flex-end;
-  font-size: 1.25rem;
+  gap: 1rem;
+  font-size: 1.5rem;
 }
 
-.external-link li {
-  margin: 0 1rem;
-}
-
-.external-link a {
+.link a {
   color: rgba(0, 0, 0, 0.4);
   transition: 0.3s;
 }
 
-.external-link ul a:hover {
+.link a:hover {
   color: var(--main-color);
   transition: 0.3s;
 }
@@ -53,9 +63,17 @@ h3 {
 
 @media screen and (min-width: 960px) {
   .hero-image {
+    height: calc(100vh - 69.5px);
+  }
+
+  #portfolio .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url('../images/e-portfolio.jpg');
-    height: calc(100vh - 69.5px);
+  }
+
+  #trip-planner .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('../images/trip-planner.jpg');
   }
 
   .hero-text {
@@ -68,7 +86,7 @@ h3 {
 
   .hero-text h2 {
     text-align: center;
-    color: var(--accent-color);
+    color: white;
     font-size: 8rem;
     white-space: nowrap;
   }
@@ -79,7 +97,34 @@ h3 {
     font-size: 3rem;
   }
 
-  .external-link ul {
+  .hero-link {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+
+  .hero-link li {
+    margin: 0 1rem;
     font-size: 2rem;
+  }
+
+  .hero-link a {
+    transition: 0.3s;
+  }
+
+  .hero-link a:hover {
+    color: var(--accent-color);
+    transition: 0.3s;
+  }
+
+  .tag {
+    justify-content: center;
+  }
+
+  .tag li {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+    font-size: 1.5rem;
   }
 }
