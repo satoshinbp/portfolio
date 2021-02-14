@@ -41,7 +41,6 @@ h1 {
 }
 
 h2 {
-  color: var(--main-color);
   font-size: 2.5rem;
   text-align: center;
 }
@@ -94,24 +93,18 @@ blockquote {
 }
 
 /* Button */
-.button-primary-outlined {
+.button-primary {
   padding: 0.5rem;
-  border: 1px solid rgba(1, 87, 97, 0.5);
-  background-color: var(--base-color);
+  background-color: var(--accent-color);
   color: var(--main-color);
   font-size: 0.875rem;
   transition: 0.3s;
 }
 
-.button-primary-outlined:hover {
-  border: 1px solid var(--main-color);
-  background-color: rgba(1, 87, 97, 0.05);
-  color: var(--main-color);
+.button-primary:hover {
+  background-color: var(--main-color);
+  color: var(--accent-color);
   transition: 0.3s;
-}
-
-.button-primary-outlined a {
-  color: var(--main-color);
 }
 
 .icon-button {
@@ -128,6 +121,20 @@ blockquote {
 .icon-button:hover {
   color: var(--accent-color);
   transition: 0.3s;
+}
+
+/* Tag */
+.tag {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 0.5rem;
+  color: var(--main-color);
+}
+
+.tag li {
+  padding: 0.25rem 0.5rem;
+  border: 1px solid var(--main-color);
+  border-radius: 4px;
 }
 
 /* Header */
@@ -323,12 +330,7 @@ nav a:hover {
 }
 
 .card-title {
-  font-size: 1.25rem;
-}
-
-.card-tag {
-  color: var(--main-color);
-  font-size: 0.875rem;
+  font-size: 1.5rem;
 }
 
 .card-action {

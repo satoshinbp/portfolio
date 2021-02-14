@@ -2,6 +2,15 @@ h1 a {
   color: var(--accent-color);
 }
 
+h2 {
+  text-align: inherit;
+  margin-bottom: 0rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
 .hero-image {
   background-image: url('../images/e-portfolio.jpg');
   height: calc(50vh - 69.5px);
@@ -15,17 +24,9 @@ h1 a {
   padding-top: 0;
 }
 
-p {
-  text-align: center;
-}
-
-.title p {
-  font-weight: 700;
-}
-
 .external-link ul {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   font-size: 1.25rem;
 }
 
@@ -44,10 +45,6 @@ p {
 }
 
 @media screen and (min-width: 600px) {
-  p {
-    text-align: initial;
-  }
-
   .external-link ul {
     justify-content: flex-end;
     font-size: 1.5rem;
