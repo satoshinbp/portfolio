@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Shinya Sato</title>
     <script src="main.js" defer></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/main.css" />
     <script
       src="https://kit.fontawesome.com/5ad9629e4a.js"
       crossorigin="anonymous"
@@ -19,11 +19,11 @@
         <h1>Shinya Sato</h1>
         <nav>
           <div id="overlay"></div>
-          <button class="icon-button pc-hidden" id="menu-open-button">
+          <button class="icon-button tablet-pc-hidden" id="menu-open-button">
             <i class="fas fa-bars"></i>
           </button>
           <button
-            class="icon-button pc-hidden hidden-button"
+            class="icon-button tablet-pc-hidden hidden-button"
             id="menu-close-button"
           >
             <i class="fas fa-times"></i>
@@ -87,7 +87,7 @@
               reporting in team projects.
             </p>
             <p>
-              I’m flexible, love to be in a diverse environment. Vancouver is a
+              I’m flexible, love to be in a diverse environment. Canada is a
               place where people from different backgrounds live together, one
               of the best places for me to live and work.
             </p>
@@ -137,69 +137,87 @@
           <h2>My Works</h2>
           <div class="card-container">
             <div class="card">
-              <h3 class="card-title">E-portfolio</h3>
-              <p class="card-tag">HTML, CSS, JavaScript</p>
-              <p class="card-content">
-                E-portfolio, this website, is developed as the first HTML/CSS
-                assignment in College, also implementing small JavaScript
-                programming.
-              </p>
-              <div class="card-action">
-                <ul>
-                  <li>
-                    <a
-                      href="https://github.com/satoshinbp/portfolio"
-                      aria-hidden="true"
-                    >
-                      <span class="visually-hidden">GitHub</span>
-                      <i class="fab fa-github" aria-hidden="true"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" aria-hidden="true">
-                      <span class="visually-hidden">Open in new window</span>
-                      <i
-                        class="fas fa-external-link-alt"
+              <img src="images/e-portfolio.jpg" alt="" class="card-img" />
+              <div class="card-wrapper">
+                <h3 class="card-title">E-portfolio</h3>
+                <p class="card-tag">HTML, CSS, JavaScript</p>
+                <p class="card-content">
+                  E-portfolio, this website, is developed as the first HTML/CSS
+                  assignment in College, also implementing small JavaScript
+                  programming.
+                </p>
+                <div class="card-action">
+                  <a
+                    href="works/portfolio.html"
+                    class="button-primary-outlined"
+                  >
+                    Learn More
+                  </a>
+                  <ul>
+                    <li>
+                      <a
+                        href="https://github.com/satoshinbp/portfolio"
                         aria-hidden="true"
-                      ></i>
-                    </a>
-                  </li>
-                </ul>
+                      >
+                        <span class="visually-hidden">GitHub</span>
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" aria-hidden="true">
+                        <span class="visually-hidden">Open in new window</span>
+                        <i
+                          class="fas fa-external-link-alt"
+                          aria-hidden="true"
+                        ></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
 
             <div class="card">
-              <h3 class="card-title">Trip Planner</h3>
-              <p class="card-tag">React, Next.js, Material-UI, Firebase</p>
-              <p class="card-content">
-                Trip Planner is a web application to manage trip itinerary,
-                developed as a personal project. It uses React and Next.js for
-                front-end, Material-UI for styling, and Firebase for back-end.
-              </p>
-              <div class="card-action">
-                <ul>
-                  <li>
-                    <a
-                      href="https://github.com/satoshinbp/trip-planner"
-                      aria-hidden="true"
-                    >
-                      <span class="visually-hidden">GitHub</span>
-                      <i class="fab fa-github" aria-hidden="true"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://trip-planner-hazel.vercel.app/"
-                      aria-hidden="true"
-                    >
-                      <span class="visually-hidden">Open in new window</span>
-                      <i
-                        class="fas fa-external-link-alt"
+              <img src="images/trip-planner.jpg" alt="" class="card-img" />
+              <div class="card-wrapper">
+                <h3 class="card-title">Trip Planner</h3>
+                <p class="card-tag">React, Next.js, Material-UI, Firebase</p>
+                <p class="card-content">
+                  Trip Planner is a web application to manage trip itinerary,
+                  developed as a personal project. It uses React and Next.js for
+                  front-end, Material-UI for styling, and Firebase for back-end.
+                </p>
+                <div class="card-action">
+                  <a
+                    href="works/trip-planner.html"
+                    class="button-primary-outlined"
+                  >
+                    Learn More
+                  </a>
+                  <ul>
+                    <li>
+                      <a
+                        href="https://github.com/satoshinbp/trip-planner"
                         aria-hidden="true"
-                      ></i>
-                    </a>
-                  </li>
-                </ul>
+                      >
+                        <span class="visually-hidden">GitHub</span>
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://trip-planner-hazel.vercel.app/"
+                        aria-hidden="true"
+                      >
+                        <span class="visually-hidden">Open in new window</span>
+                        <i
+                          class="fas fa-external-link-alt"
+                          aria-hidden="true"
+                        ></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
