@@ -27,10 +27,6 @@ h3 {
   background-image: url('../images/trip-planner.jpg');
 }
 
-.wrapper {
-  padding-top: 0;
-}
-
 .meta {
   display: flex;
   flex-flow: row nowrap;
@@ -118,11 +114,11 @@ h3 {
     transition: 0.3s;
   }
 
-  .tag {
+  .tags {
     justify-content: center;
   }
 
-  .tag li {
+  .tags li {
     border-color: var(--accent-color);
     color: var(--accent-color);
     font-size: 1.5rem;

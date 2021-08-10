@@ -16,8 +16,41 @@
 
   <body>
     <header>
-      <div class="header-wrapper">
-        <h1><a href="../index.html">Shinya Sato</a></h1>
+      <div class="wrapper">
+        <div class="header-container">
+          <h1><a href="../index.html">Shinya Sato</a></h1>
+
+          <nav>
+            <div id="overlay"></div>
+
+            <button class="icon-button tablet-pc-hidden" id="menu-open-button">
+              <i class="fas fa-bars"></i>
+            </button>
+
+            <button
+              class="icon-button tablet-pc-hidden hidden-button"
+              id="menu-close-button"
+            >
+              <i class="fas fa-times"></i>
+            </button>
+
+            <ul class="mobile-hidden" id="menu-list">
+              <li><a href="../index.html#about" class="menu-item">About</a></li>
+              <li><a href="../index.html#works" class="menu-item">Works</a></li>
+              <li>
+                <a href="../index.html#skills" class="menu-item">Skills</a>
+              </li>
+              <li>
+                <a href="../index.html#interests" class="menu-item">
+                  Interests
+                </a>
+              </li>
+              <li>
+                <a href="../index.html#contact" class="menu-item">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
@@ -26,11 +59,13 @@
         <div class="hero-image">
           <div class="hero-text mobile-tablet-hidden">
             <h2>E-portfolio</h2>
-            <ul class="tag">
+
+            <ul class="tags">
               <li>HTML</li>
               <li>CSS</li>
               <li>JavaScript</li>
             </ul>
+
             <ul class="hero-link">
               <li>
                 <a
@@ -41,6 +76,7 @@
                   <i class="fab fa-github" aria-hidden="true"></i>
                 </a>
               </li>
+
               <li>
                 <a
                   href="https://shinya-sato-portfolio-site.herokuapp.com/"
@@ -57,12 +93,14 @@
         <div class="wrapper">
           <div class="title pc-hidden">
             <h2>E-portfolio</h2>
+
             <div class="meta">
-              <ul class="tag">
+              <ul class="tags">
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
               </ul>
+
               <ul class="link">
                 <li>
                   <a
@@ -73,6 +111,7 @@
                     <i class="fab fa-github" aria-hidden="true"></i>
                   </a>
                 </li>
+
                 <li>
                   <a
                     href="https://shinya-sato-portfolio-site.herokuapp.com/"
@@ -88,6 +127,7 @@
 
           <div>
             <h3>Overview</h3>
+
             <p>
               This is my first website developed as an assignment in HTML/CSS
               class at Langara College to show my works to the public.
@@ -111,52 +151,57 @@
     </main>
 
     <footer>
-      <div class="footer-wrapper">
-        <img
-          src="../images/portrait-footer.jpeg"
-          alt="front portrait"
-          class="portrait mb-hidden"
-        />
+      <div class="wrapper">
+        <div class="footer-container">
+          <img
+            src="../images/portrait-footer.jpeg"
+            alt="front portrait"
+            class="portrait mb-hidden"
+          />
 
-        <section id="contact">
-          <h2>Contact Me</h2>
+          <section id="contact">
+            <h2>Contact Me</h2>
 
-          <ul class="contact-basic">
-            <li>Shinya Sato</li>
-            <li>
-              Email:
-              <a href="mailto:0113shin.s@gmail.com">0113shin.s@gmail.com</a>
-            </li>
-            <li>Tel: <a href="tel:+818078527540">+1 (604) 365-3367</a></li>
-          </ul>
+            <ul class="contact-basic">
+              <li>Shinya Sato</li>
+              <li>
+                Email:
+                <a href="mailto:0113shin.s@gmail.com">0113shin.s@gmail.com</a>
+              </li>
+              <li>Tel: <a href="tel:+818078527540">+1 (604) 365-3367</a></li>
+            </ul>
 
-          <ul class="contact-social">
-            <li>
-              <a
-                href="https://www.linkedin.com/in/shinyasato"
-                aria-hidden="true"
-              >
-                <span class="visually-hidden">LinkedIn</span>
-                <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/satoshinbp" aria-hidden="true">
-                <span class="visually-hidden">GitHub</span>
-                <i class="fab fa-github fa-2x" aria-hidden="true"></i>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.facebook.com/shinya.sato.353"
-                aria-hidden="true"
-              >
-                <span class="visually-hidden">Facebook</span>
-                <i class="fab fa-facebook-square fa-2x" aria-hidden="true"></i>
-              </a>
-            </li>
-          </ul>
-        </section>
+            <ul class="contact-social">
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/shinyasato"
+                  aria-hidden="true"
+                >
+                  <span class="visually-hidden">LinkedIn</span>
+                  <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/satoshinbp" aria-hidden="true">
+                  <span class="visually-hidden">GitHub</span>
+                  <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/shinya.sato.353"
+                  aria-hidden="true"
+                >
+                  <span class="visually-hidden">Facebook</span>
+                  <i
+                    class="fab fa-facebook-square fa-2x"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
       </div>
     </footer>
   </body>
