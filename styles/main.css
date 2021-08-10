@@ -25,9 +25,12 @@ body {
 }
 
 *[class$='wrapper'] {
-  max-width: 1080px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 0 1rem;
+}
+
+.wrapper {
+  max-width: 1080px;
 }
 
 h1,
@@ -75,6 +78,7 @@ blockquote {
 .mobile-tablet-hidden {
   display: none;
 }
+
 .visually-hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
@@ -124,14 +128,14 @@ blockquote {
 }
 
 /* Tag */
-.tag {
+.tags {
   display: flex;
   flex-flow: row wrap;
   gap: 0.5rem;
   color: var(--main-color);
 }
 
-.tag li {
+.tags li {
   padding: 0.25rem 0.5rem;
   border: 1px solid var(--main-color);
   border-radius: 4px;
@@ -148,11 +152,10 @@ header {
   color: var(--accent-color);
 }
 
-.header-wrapper {
+.header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1rem;
 }
 
 nav li {
@@ -211,7 +214,7 @@ nav a:hover {
 }
 
 /* introduction */
-.intro-wrapper {
+.intro-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -250,13 +253,10 @@ nav a:hover {
 /* about me */
 #about {
   background-color: var(--second-bg-color);
+  padding: 1rem 0;
 }
 
-.about-wrapper {
-  padding: 1rem;
-}
-
-.about-wrapper p {
+.about-container p {
   text-align: center;
 }
 
@@ -297,12 +297,10 @@ nav a:hover {
 }
 
 /* works */
-.card-container {
+.works-container {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 1rem;
-  max-width: 450px;
-  margin: 0 auto;
 }
 
 .card {
@@ -311,11 +309,21 @@ nav a:hover {
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
 }
 
+.card-body {
+  margin: 1rem 0;
+  height: 100%;
+}
+
 .card-wrapper {
+  height: 100%;
+}
+
+.card-body-container {
   flex-grow: 1;
   display: flex;
   flex-flow: column nowrap;
   row-gap: 0.5rem;
+  height: 100%;
 }
 
 .card-img {
@@ -376,7 +384,7 @@ footer {
   color: var(--base-color);
 }
 
-.footer-wrapper {
+.footer-container {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -427,7 +435,7 @@ footer .portrait {
 
 @media screen and (min-width: 600px) {
   * [class$='wrapper'] {
-    padding: 1rem 2rem;
+    padding: 0 2rem;
   }
 
   h2 {
@@ -443,16 +451,15 @@ footer .portrait {
   }
 
   /* header */
-  .header-wrapper {
+  .header-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2rem;
   }
 
   /* introduction */
-  .intro-wrapper {
+  .intro-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
@@ -477,7 +484,7 @@ footer .portrait {
   }
 
   /* about me */
-  .about-wrapper p {
+  .about-container p {
     text-align: start;
   }
 
@@ -505,13 +512,13 @@ footer .portrait {
   }
 
   /* works */
-  .card-container {
+  .works-container {
     grid-template-columns: repeat(2, 1fr);
     max-width: none;
   }
 
   .card-wrapper {
-    padding: 1rem;
+    padding: 0 1rem;
   }
 
   /* skills */
@@ -520,7 +527,7 @@ footer .portrait {
   }
 
   /* footer */
-  .footer-wrapper {
+  .footer-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
@@ -542,7 +549,7 @@ footer .portrait {
 
 @media screen and (min-width: 960px) {
   * [class$='wrapper'] {
-    padding: 1rem 3rem;
+    padding: 0 3rem;
   }
 
   .mobile-tablet-hidden {
@@ -551,10 +558,6 @@ footer .portrait {
 
   .pc-hidden {
     display: none;
-  }
-
-  .header-wrapper {
-    padding: 0 3rem;
   }
 
   .greeting {
@@ -570,12 +573,12 @@ footer .portrait {
   }
 
   /* works */
-  .card-container {
+  .works-container {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
   }
 
   .card-wrapper {
-    padding: 1rem;
+    padding: 0 1rem;
   }
 }
