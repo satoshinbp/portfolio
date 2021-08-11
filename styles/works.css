@@ -12,7 +12,7 @@ h3 {
 }
 
 .hero-image {
-  height: calc(50vh - 69.5px);
+  height: calc(40vh - 69.5px);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -27,10 +27,23 @@ h3 {
   background-image: url('../images/trip-planner.jpg');
 }
 
+#cheers .hero-image {
+  background-image: url('../images/cheers.svg');
+}
+
+#petpaws .hero-image {
+  background-image: url('../images/petpaws.svg');
+}
+
 .meta {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  align-items: start;
+}
+
+.meta ul {
+  margin: 1rem 0;
 }
 
 .link {
@@ -50,10 +63,30 @@ h3 {
   transition: 0.3s;
 }
 
+.container {
+  margin: 1rem 0;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
 @media screen and (min-width: 600px) {
+  .hero-image {
+    height: calc(50vh - 69.5px);
+  }
+
   .external-link ul {
     justify-content: flex-end;
     font-size: 1.5rem;
+  }
+
+  .container {
+    margin: 2rem 0;
+  }
+
+  section {
+    margin-bottom: 2.25rem;
   }
 }
 
@@ -63,13 +96,23 @@ h3 {
   }
 
   #portfolio .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
       url('../images/e-portfolio.jpg');
   }
 
   #trip-planner .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
       url('../images/trip-planner.jpg');
+  }
+
+  #cheers .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url('../images/cheers-notext.svg');
+  }
+
+  #petpaws .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url('../images/petpaws-notext.svg');
   }
 
   .hero-text {
@@ -114,6 +157,10 @@ h3 {
     transition: 0.3s;
   }
 
+  .container {
+    margin: 3rem 0;
+  }
+
   .tags {
     justify-content: center;
   }
@@ -122,5 +169,9 @@ h3 {
     border-color: var(--accent-color);
     color: var(--accent-color);
     font-size: 1.5rem;
+  }
+
+  section {
+    margin-bottom: 2.5rem;
   }
 }
