@@ -34,10 +34,10 @@
             </button>
 
             <ul class="mobile-hidden" id="menu-list">
-              <li><a href="#about" class="menu-item">About</a></li>
-              <li><a href="#works" class="menu-item">Works</a></li>
               <li><a href="#skills" class="menu-item">Skills</a></li>
-              <li><a href="#interests" class="menu-item">Interests</a></li>
+              <li><a href="#works" class="menu-item">Works</a></li>
+              <li><a href="#about" class="menu-item">About</a></li>
+              <!-- <li><a href="#interests" class="menu-item">Interests</a></li> -->
               <li><a href="#contact" class="menu-item">Contact</a></li>
             </ul>
           </nav>
@@ -64,79 +64,51 @@
         </div>
       </section>
 
-      <section id="about">
+      <section id="skills" class="icon-list-section">
         <div class="wrapper">
-          <h2>About Me</h2>
+          <h2>My Skills</h2>
 
-          <div class="about-container">
-            <section id="bio">
-              <p>
-                Hi, I'm Shinya, currently studying web and mobile app
-                development in the post-degree program at Langara College. Some
-                works achieved during the program are shown in
-                <a href="#works">My Works</a> section. I am especially familiar
-                with React through several projects.
-              </p>
-              <p>
-                I love keep updating my values, knowledge, and skills. IT
-                industry is fast paced environement, which means challenging but
-                also exciting for me. This is why I decided to dive into this
-                field and why I'm studying in college now.
-              </p>
-              <blockquote cite="https://www.azquotes.com/quote/87359">
-                Common sense is the collection of prejudices acquired by age 18.
-                - Albert Einstein
-              </blockquote>
-              <p>
-                I'm self-disciplined, love organizing and simplifying my life.
-                In the same way, I always try to code in a simple and organized
-                way for better readability, maintainability with the best
-                performance.
-              </p>
-              <p>
-                I came Canada looking for grate opportunity to study and work,
-                feeling that I can express myself in the best way in this
-                multicultural environment.
-              </p>
-            </section>
-
-            <section id="education" class="history">
-              <h3><span>Education</span></h3>
-
-              <div class="org">
-                <p><b>Langara College</b>, Vancouver, BC</p>
-                <p class="duration">Sep 2020 - Present</p>
-                <p>Post-Degree Diploma of Web and Mobile App Development</p>
-              </div>
-              <div class="org">
-                <p><b>University of Tokyo</b>, Tokyo</p>
-                <p class="duration">Apr 2014 - Mar 2016</p>
-                <p>Master of Aeronautics, Engineering</p>
-              </div>
-              <div class="org">
-                <p><b>University of Tokyo</b>, Tokyo</p>
-                <p class="duration">Apr 2010 - Mar 2014</p>
-                <p>Bachelor of Aeronautics, Engineering</p>
-              </div>
-            </section>
-
-            <section id="employment" class="history">
-              <h3><span>Work History</span></h3>
-
-              <div class="org">
-                <p>
-                  <b>MODEC Offshore Production Systems Pte. Ltd.​</b>, Singapore
-                </p>
-                <p class="duration">Apr 2018 - Mar 2020</p>
-                <p>Mechanical Engineer</p>
-              </div>
-              <div class="org">
-                <p><b>MODEC, Inc.</b>​, Tokyo</p>
-                <p class="duration">Apr 2016 - Apr 2018</p>
-                <p>Mechanical Engineer</p>
-              </div>
-            </section>
-          </div>
+          <ul>
+            <li>
+              <!-- <i class="fab fa-react fa-3x"></i> -->
+              <img src="images/logo-react.svg" class="logo" />
+              <p>React</p>
+            </li>
+            <li>
+              <!-- <i class="fab fa-js fa-3x"></i> -->
+              <img src="images/logo-js.svg" class="logo" />
+              <p>JavaScript</p>
+            </li>
+            <li>
+              <!-- <i class="fab fa-node-js fa-3x"></i> -->
+              <img src="images/logo-nodejs.svg" class="logo" />
+              <p>Node.js</p>
+            </li>
+            <li>
+              <img src="images/logo-firebase.svg" class="logo" />
+              <p>Firebase</p>
+            </li>
+            <li>
+              <!-- <i class="fas fa-database fa-3x"></i> -->
+              <img src="images/logo-mysql.svg" class="logo" />
+              <p>MySQL</p>
+            </li>
+            <li>
+              <!-- <i class="fab fa-html5 fa-3x"></i> -->
+              <img src="images/logo-html5.svg" class="logo" />
+              <p>HTML5</p>
+            </li>
+            <li>
+              <!-- <i class="fab fa-css3-alt fa-3x"></i> -->
+              <img src="images/logo-css3.svg" class="logo" />
+              <p>CSS3</p>
+            </li>
+            <li>
+              <!-- <i class="fab fa-sass fa-3x"></i> -->
+              <img src="images/logo-sass.svg" class="logo" />
+              <p>Sass</p>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -320,10 +292,7 @@
                     <p class="card-description">
                       E-portfolio, this website, is a showcase of my works.
                     </p>
-                    <div class="card-action">
-                      <a href="works/portfolio.html" class="button-primary">
-                        Learn More
-                      </a>
+                    <div class="card-action card-action-no-btn">
                       <ul>
                         <li>
                           <a
@@ -358,55 +327,69 @@
         </div>
       </section>
 
-      <section id="skills" class="icon-list-section">
+      <section id="about">
         <div class="wrapper">
-          <h2>Skills</h2>
+          <h2>About Me</h2>
 
-          <ul>
-            <li>
-              <!-- <i class="fab fa-html5 fa-3x"></i> -->
-              <img src="images/logo-html5.svg" class="logo" />
-              <p>HTML5</p>
-            </li>
-            <li>
-              <!-- <i class="fab fa-css3-alt fa-3x"></i> -->
-              <img src="images/logo-css3.svg" class="logo" />
-              <p>CSS3</p>
-            </li>
-            <li>
-              <!-- <i class="fab fa-sass fa-3x"></i> -->
-              <img src="images/logo-sass.svg" class="logo" />
-              <p>Sass</p>
-            </li>
-            <li>
-              <!-- <i class="fab fa-js fa-3x"></i> -->
-              <img src="images/logo-js.svg" class="logo" />
-              <p>JavaScript</p>
-            </li>
-            <li>
-              <!-- <i class="fab fa-react fa-3x"></i> -->
-              <img src="images/logo-react.svg" class="logo" />
-              <p>React</p>
-            </li>
-            <li>
-              <!-- <i class="fab fa-node-js fa-3x"></i> -->
-              <img src="images/logo-nodejs.svg" class="logo" />
-              <p>Node.js</p>
-            </li>
-            <li>
-              <!-- <i class="fas fa-database fa-3x"></i> -->
-              <img src="images/logo-mysql.svg" class="logo" />
-              <p>MySQL</p>
-            </li>
-            <li>
-              <img src="images/logo-firebase.svg" class="logo" />
-              <p>Firebase</p>
-            </li>
-          </ul>
+          <div class="about-container">
+            <section id="bio">
+              <p>
+                Hi, I'm Shinya, a full stack developer, especially familiar with
+                React through several web and mobile app projects. I'm
+                self-disciplined, love organizing and simplifying my life. In
+                the same way, I always try to code in a simple and organized way
+                for better readability, maintainability with the best
+                performance. I also love updating my values, knowledge, and
+                skills. IT industry is fast paced environement, which is super
+                exciting for me.
+              </p>
+              <blockquote cite="https://www.azquotes.com/quote/87359">
+                Common sense is the collection of prejudices acquired by age 18.
+                - Albert Einstein
+              </blockquote>
+            </section>
+
+            <section id="education" class="history">
+              <h3><span>Education</span></h3>
+
+              <div class="org">
+                <p><b>Langara College</b>, Vancouver, BC</p>
+                <p class="duration">Sep 2020 - Present</p>
+                <p>Post-Degree Diploma of Web and Mobile App Development</p>
+              </div>
+              <div class="org">
+                <p><b>University of Tokyo</b>, Tokyo</p>
+                <p class="duration">Apr 2014 - Mar 2016</p>
+                <p>Master of Aeronautics, Engineering</p>
+              </div>
+              <div class="org">
+                <p><b>University of Tokyo</b>, Tokyo</p>
+                <p class="duration">Apr 2010 - Mar 2014</p>
+                <p>Bachelor of Aeronautics, Engineering</p>
+              </div>
+            </section>
+
+            <section id="employment" class="history">
+              <h3><span>Work History</span></h3>
+
+              <div class="org">
+                <p>
+                  <b>MODEC Offshore Production Systems Pte. Ltd.​</b>, Singapore
+                </p>
+                <p class="duration">Apr 2018 - Mar 2020</p>
+                <p>Mechanical Engineer</p>
+              </div>
+              <div class="org">
+                <p><b>MODEC, Inc.</b>​, Tokyo</p>
+                <p class="duration">Apr 2016 - Apr 2018</p>
+                <p>Mechanical Engineer</p>
+              </div>
+            </section>
+          </div>
         </div>
       </section>
 
-      <section id="interests" class="icon-list-section">
+      <!-- <section id="interests" class="icon-list-section">
         <div class="wrapper">
           <h2>Interests</h2>
 
@@ -429,7 +412,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <footer>
