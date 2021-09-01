@@ -131,7 +131,7 @@ blockquote {
 .tags {
   display: flex;
   flex-flow: row wrap;
-  gap: 0.5rem;
+  grid-gap: 0.5rem;
   color: var(--main-color);
 }
 
@@ -612,7 +612,7 @@ footer .portrait {
   /* works */
   .works-container {
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    grid-gap: 2rem;
   }
 
   .card-wrapper {
